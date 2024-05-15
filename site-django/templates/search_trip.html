@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Лента путешествий</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Заголовок и навигация -->
+    <header>
+      <h1>Присоединись к созданному путешествию</h1>
+    </header>
+
+    <p>Напиши тг-боту ID путешествия и он пришлет ссылку общей группы путешествия!</p>
+    <p>Tg-bot(@FriendTripBot): https://t.me/FriendTripBot</p>
+    <!-- Поиск -->
+    <section id="search">
+      <form>
+        <label for="destination">Место назначения:</label>
+        <input type="text" id="destination" name="destination">
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date">
+        <button type="submit">Найти</button>
+      </form>
+    </section>
+
+    <!-- Лента путешествий -->
+    <section id="trip1">
+      <div class="trip">
+          <h3>Путешествие 1</h3>
+          <p>ID: {{ trip.id }}</p>
+          <p>Destination: {{ trip.destination }}</p>
+          <p>Start Date: {{ trip.start_date }}</p>
+          <p>End Date: {{ trip.end_date }}</p>
+          <p>Description: {{ trip.description }}</p>
+      </div>
+    </section>
+
+  <section id="trip2">
+      <div class="trip">
+          <h3>Путешествие 2</h3>
+          <p>ID: {{ trip.id }}</p>
+          <p>Destination: {{ trip.destination }}</p>
+          <p>Start Date: {{ trip.start_date }}</p>
+          <p>End Date: {{ trip.end_date }}</p>
+          <p>Description: {{ trip.description }}</p>
+      </div>
+    </section>
+
+
+  </body>
+</html>
